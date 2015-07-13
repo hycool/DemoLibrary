@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+svg{border:1px solid #666;margin:5px;}
+svg text{
+	pointer-events:none;
+}
+div.bar {
+	display: inline-block;
+	width: 20px;
+	height: 75px;
+	background-color: teal;
+	margin-right: 2px;
+}
+.axis path, .axis line {
+	fill: none;
+	stroke: black;
+	shape-rendering: crispEdges;
+	
+}
+.axis text {
+	font-family:"Microsoft YaHei";
+	font-size: 11px;
+}
+
+
+rect{
+-moz-transition: all 0.3s;
+-o-transition: all 0.3s;
+-webkit-transition: all 0.3s;
+transition: all 0.3s;
+}
+
+rect:hover{
+	fill:orange;
+}

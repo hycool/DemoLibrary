@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap-theme.min.css" />
+<!-- 
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Unica+One" />
+-->
+<link rel="stylesheet" href="shepherdTheme.css" />
+<title>highcharts</title>
+</head>
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class=" well well-sm"><a class="btn btn-default btn-block" onClick="window.location.href='highcharts_normal.html'">Change To Normal</a></div>
+        </div>
+    </div>
+    <!-- begin row -->
+    <div class="row"> 
+        <!--begin col -->
+        <div class=" col-xs-6">
+            <div class="panel panel-inverse">
+                <div class="panel-heading">
+                    <h4 class="panel-title">平滑曲线</h4>
+                </div>
+                <div class="panel-body panel-body-inverse">
+                    <div id="spline"></div>
+                </div>
+                <div class="panel-footer">Based on HighCharts : spline</div>
+            </div>
+        </div>
+        <!-- end col --> 
+        <!--begin col -->
+        <div class=" col-xs-6">
+            <div class="panel panel-inverse">
+                <div class="panel-heading">
+                    <h4 class="panel-title">区域面积图</h4>
+                </div>
+                <div class="panel-body panel-body-inverse">
+                    <div id="area"></div>
+                </div>
+                <div class="panel-footer">Based on HighCharts : area</div>
+            </div>
+        </div>
+        <!-- end col --> 
+    </div>
+    <!-- end row --> 
+    <!-- begin row -->
+    <div class="row"> 
+        <!-- begin col -->
+        <div class=" col-xs-6">
+            <div class="panel panel-inverse">
+                <div class="panel-heading">
+                    <h4 class="panel-title">普通3D饼图</h4>
+                </div>
+                <div class="panel-body panel-body-inverse">
+                    <div id="pie1"></div>
+                </div>
+                <div class="panel-footer">Based on HighCharts : pie</div>
+            </div>
+        </div>
+        <!-- end col --> 
+        <!--begin col -->
+        <div class=" col-xs-6">
+            <div class="panel panel-inverse">
+                <div class="panel-heading">
+                    <h4 class="panel-title">3D圆环饼图</h4>
+                </div>
+                <div class="panel-body panel-body-inverse">
+                    <div id="pie2"></div>
+                </div>
+                <div class="panel-footer">Based on HighCharts : pie</div>
+            </div>
+        </div>
+        <!-- end col --> 
+    </div>
+    <!-- end row --> 
+    
+    <!-- begin row -->
+    <div class="row"> 
+        <!-- begin col -->
+        <div class=" col-xs-6">
+            <div class="panel panel-inverse">
+                <div class="panel-heading">
+                    <h4 class="panel-title">普通柱状图</h4>
+                </div>
+                <div class="panel-body panel-body-inverse">
+                    <div id="column1"></div>
+                </div>
+                <div class="panel-footer">Based on HighCharts : column</div>
+            </div>
+        </div>
+        <!-- end col --> 
+        <!--begin col -->
+        <div class=" col-xs-6">
+            <div class="panel panel-inverse">
+                <div class="panel-heading">
+                    <h4 class="panel-title">分组柱状图</h4>
+                </div>
+                <div class="panel-body panel-body-inverse">
+                    <div id="column2"></div>
+                </div>
+                <div class="panel-footer">Based on HighCharts : column</div>
+            </div>
+        </div>
+        <!-- end col --> 
+    </div>
+    <!-- end row --> 
+    
+    <!-- begin row -->
+    <div class="row"> 
+        <!-- begin col -->
+        <div class=" col-xs-6">
+            <div class="panel panel-inverse">
+                <div class="panel-heading">
+                    <h4 class="panel-title">百分比柱状图</h4>
+                </div>
+                <div class="panel-body panel-body-inverse">
+                    <div id="column-percent"></div>
+                </div>
+                <div class="panel-footer">Based on HighCharts : column</div>
+            </div>
+        </div>
+        <!-- end col --> 
+        <!--begin col -->
+        <div class=" col-xs-6">
+            <div class="panel panel-inverse">
+                <div class="panel-heading">
+                    <h4 class="panel-title">条形柱状图</h4>
+                </div>
+                <div class="panel-body panel-body-inverse">
+                    <div id="bar"></div>
+                </div>
+                <div class="panel-footer">Based on HighCharts : column</div>
+            </div>
+        </div>
+        <!-- end col --> 
+    </div>
+    <!-- end row --> 
+    
+    <!-- begin row -->
+    <div class="row"> 
+        <!-- begin col -->
+        <div class=" col-xs-6">
+            <div class="panel panel-inverse">
+                <div class="panel-heading">
+                    <h4 class="panel-title">区域区间范围图</h4>
+                </div>
+                <div class="panel-body panel-body-inverse">
+                    <div id="arearange"></div>
+                </div>
+                <div class="panel-footer">Based on HighCharts : arearange</div>
+            </div>
+        </div>
+        <!-- end col --> 
+        <!--begin col -->
+        <div class=" col-xs-6">
+            <div class="panel panel-inverse">
+                <div class="panel-heading">
+                    <h4 class="panel-title">柱状范围图</h4>
+                </div>
+                <div class="panel-body panel-body-inverse">
+                    <div id="columnrange"></div>
+                </div>
+                <div class="panel-footer">Based on HighCharts : columnrange</div>
+            </div>
+        </div>
+        <!-- end col --> 
+    </div>
+    <!-- end row --> 
+</div>
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script> 
+<script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> 
+<script src="http://cdn.bootcss.com/highcharts/4.1.5/highcharts.js"></script> 
+<script src="http://cdn.bootcss.com/highcharts/4.1.5/highcharts-3d.js"></script> 
+<!-- in order to run an arearange series you need to load the highcharts-more.js file. --> 
+<script src="http://cdn.bootcss.com/highcharts/4.1.5/highcharts-more.js"></script> 
+<!-- 如果需要导出JPEG/PNG/SVG/PDF等格式,需要引入下面的exproting.js--> 
+<script src="http://cdn.bootcss.com/highcharts/4.1.5/modules/exporting.js"></script> 
+<script src="../_lib/chartJs.js"></script> 
+<!-- 主题文件，由于cdn中远程文件会引入http://fonts.googleapis.com/css?family=Unica+On ，非常耗时，所以需要本地引入--> 
+<!-- 主题共有以下几种 dark-blue	dark-green	dark-unica	gray	grid	grid-light	sand-signika	skies	--> 
+<!--此主题为参照dark-unica自定义的主题 --> 
+<script src="demo_highcharts_theme_inverse.js"></script> 
+<!-- local js file --> 
+<script src="demo_highcharts_spline.js"></script> 
+<script src="demo_highcharts_area.js"></script> 
+<script src="demo_highcharts_pie.js"></script> 
+<script src="demo_highcharts_column.js"></script> 
+<script src="demo_highcharts_range.js"></script>
+</html>

@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document */
+.morris-hover.morris-default-style {
+	background:rgba(0,0,0,0.1);
+    border: none!important;
+    padding: 8px!important;
+    color: #ccc!important;
+    font-family:"Microsoft YaHei";
+}

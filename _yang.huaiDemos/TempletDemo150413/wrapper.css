@@ -1,0 +1,462 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+  date:2015-04-13
+  author:hy
+  description："a step to perfect..."
+*/
+/*
+  公共标签样式定义
+*/
+body{
+	font-family:"Microsoft YaHei","open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:12px;
+	background-color:#d9e0e7;
+	color: rgb(103, 106, 108); 
+	line-height: 1.42857143;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  color: #242a30;
+}
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+  font-size: 60%;
+  font-weight: 300;
+  color: #7c7f83;
+}
+a{
+	cursor:pointer;
+}
+a:hover{
+	text-decoration:none;
+}
+#wrapper{
+	width:100%;overflow-x:hidden;
+}
+/** 
+  公共基础类
+**/
+.gray-bg{
+	background-color:#f3f3f4;
+}
+.font-bold{
+	font-weight:600;
+}
+.block{
+	display:block;
+}
+.m-t-xs{
+	margin-top:5px;
+}
+.clear{
+	overflow:hidden;
+	display:block;
+}
+.text-xs{
+	font-size:12px;
+}
+.dropdown-menu {
+  border: medium none;
+  border-radius: 3px;
+  box-shadow: 0 0 3px rgba(86, 96, 117, 0.7);
+  display: none;
+  float: left;
+  font-size: 12px;
+  left: 0;
+  list-style: none outside none;
+  padding: 0;
+  position: absolute;
+  text-shadow: none;
+  top: 100%;
+  z-index: 1000;
+}
+
+/**
+  侧边工具栏相关
+**/
+.navbar-static-side {
+	overflow:hidden;
+	width: 220px; 
+	height:100%;
+	position: absolute; 
+	left:0;
+	top:0;
+	z-index: 2001;
+	background:#2f4050;
+}
+.arrow{
+	float:right;
+	margin-top:3px;
+}
+/*覆盖bootstrap .panel自带的样式*/
+.nav .panel{
+	margin-bottom:0;
+	border:0;
+	border-radius:0;
+}
+.nav-header{
+	padding: 33px 25px; 
+	background: url(header-profile.png) !important;
+}
+.nav-header a {
+	color: #dfe4ed;
+}
+.nav-header .text-muted {
+  color: #8095a8;
+}
+.nav-header img{
+	width: 48px;
+	height: 48px;
+}
+
+.nav-header .dropdown-menu > li > a {
+  border-radius: 3px;
+  color: inherit;
+  line-height: 25px;
+  margin: 4px;
+  text-align: left;
+  font-weight: normal;
+}
+.nav-header .dropdown-menu > li > a:hover{
+	background:inherit;
+	color:#000;
+}
+
+.nav > li >a:hover{
+	background:#293846;
+	color:#fff;
+	text-shadow:0px 0px 0.5px #fff;
+	
+}
+.nav > li > a{
+	background:#2f4050;
+	font-weight:600;
+	color:#a7b1c2;
+	padding:14px 20px 14px 25px;
+}
+.nav > li > a i{
+	margin-right:6px;
+}
+/*一级菜单点击后左侧*/
+.nav >.active {
+  border-left: 4px solid #19aa8d;
+}
+.nav .active > a{
+	color:#fff;
+	background: #293846;
+	text-shadow:0px 0px 0.5px #fff;
+}
+.nav .active .nav-second-level a{
+	background-color:#293846;
+}
+/*二级菜单点击后左侧无边框*/
+.nav-second-level >.active {
+    border:0;	
+}
+.nav-second-level li a{
+	padding: 7px 10px;
+	padding-left:52px;
+}
+.nav-second-level .active-second{
+	color:#fff;
+	text-shadow:0px 0px 0.5px #fff;
+}
+/**
+  页面内容相关
+**/
+#page-wrapper{
+	min-height:961px;
+	margin-left: 220px;
+    padding: 20px 25px;
+	background-color:#d9e0e7;
+	position: relative;
+}
+
+.page-header{
+   font-size: 24px;
+   margin: 0 0 20px;
+   padding: 0;
+   border: none;
+   line-height: 28px;
+}
+/*通用背景色*/
+.bg-green{
+    background: #00acac !important;
+}
+.bg-blue {
+    background: #348fe2!important;
+}
+.bg-purple {
+    background: #727cb6!important;
+}
+.bg-black{
+	background: #2d353c!important;
+}
+.bg-black-darker {
+    background: #242a30!important;
+}
+/*dashboard 定义*/
+.widget{
+	border-radius:3px;
+	color:#fff;
+	padding:15px;
+	overflow:hidden;
+	margin-bottom:20px;
+}
+.widget.widget-stats{
+	position:relative;
+}
+.widget-stats .stats-icon{
+	height: 56px;
+    width: 56px;
+    text-align: center;
+    line-height: 56px;
+    margin-left: 15px;
+    color: #fff;
+    position: absolute;
+	opacity:0.2;
+}
+
+.widget .stats-icon.stats-icon-lg{
+	font-size:52px;
+	top:12px;
+	right:21px;
+}
+
+.widget-stats .stats-title, .widget-stats .stats-desc{
+	color:rgba(255,255,255,0.6);
+}
+
+.widget-stats .stats-title{
+	position:relative;
+	font-size:12px;
+	line-height:1.1;
+	margin:2px 0 7px ;
+}
+
+.widget-stats .stats-number{
+	font-size:24px;
+	font-weight:300;
+	margin-bottom:10px
+}
+
+.widget-stats .stats-process{
+	background-color: rgba(0,0,0,0.2);
+	height:2px;
+	margin:0 -15px 12px;
+	overflow:hidden;
+}
+
+.widget-stats .stats-process .process-bar{
+	background:#fff;
+	height:100%;
+}
+
+.widget-stats .stats-desc{
+	font-weight:300;
+	margin-bottom:0;
+}
+/*morris 图标引擎样式定义*/
+.widget-chart {
+    position: relative;
+    overflow: hidden;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+.widget-chart .widget-chart-content {
+    padding: 15px;
+    margin-right: 230px;
+}
+.widget-chart .chart-title {
+    font-size: 18px!important;
+    color: #fff;
+    font-weight: 300!important;
+    margin: 2px 5px 7px;
+}
+.widget-chart .chart-title small {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #616D72;
+    color: rgba(255,255,255,.3);
+}
+.widget-chart .widget-chart-sidebar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 230px;
+    padding: 15px;
+}
+.widget-chart-sidebar .chart-number {
+    font-size: 24px;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.widget-chart-sidebar .chart-number small {
+    font-size: 12px;
+    color: #616D72;
+    color: rgba(255,255,255,.3);
+    display: block;
+}
+.widget-chart-sidebar .chart-legend {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-weight: 300;
+    position: absolute;
+    bottom: 10px;
+}
+.widget-chart-sidebar .chart-legend>li {
+    margin-bottom: 5px;
+    color: #fff;
+}
+.widget-chart-sidebar .chart-legend>li span {
+    color: #616D72;
+    color: rgba(255,255,255,.3);
+}
+.text-success {
+    color: #00acac!important;
+}
+.text-primary {
+    color: #348fe2!important;
+}
+.m-r-5 {
+    margin-right: 5px!important;
+}
+/*处理morris.js渲染图表的hover效果*/
+.morris-inverse .morris-hover {
+    background: rgba(0,0,0,.4)!important;
+    border: none!important;
+    padding: 8px!important;
+    color: #ccc!important;
+    font-family:"Microsoft YaHei"
+}
+
+/*处理地图*/
+.panel-inverse>.panel-heading {
+    background: #242a30;
+	color:#fff;
+}
+.panel-title {
+    line-height: 20px;
+    font-size: 12px;
+}
+.list-group-item.list-group-item-inverse {
+    background: #2d353c;
+    border-color: #242a30;
+    color: #fff;
+    font-weight: 300;
+}
+.list-group-item.list-group-item-inverse:hover{
+	background:#282f35;
+	color:#fff;
+}
+
+.badge {
+    font-size: 75%;
+    line-height: 1.25;
+    font-weight: 600;
+}
+.badge.badge-success, .label.label-success {
+    background: #00acac;
+}
+.badge.badge-primary, .label.label-primary {
+    background: #348fe2;
+}
+.badge.badge-inverse, .label.label-inverse {
+    background: rgba(0,0,0,0.4);
+}
+
+/*覆盖jvectormap-tip 的样式*/
+.jvectormap-tip{
+	background:rgba(0,0,0,0.4);
+	color:#fff;
+	border:0px;
+	font-family:"Microsoft YaHei";
+}
+
+/*用户展示列表*/
+.panel-heading .label.pull-left, .panel-heading .label.pull-right {
+    line-height: 15px;
+}
+
+.display-users-list{
+	list-style-type: none;
+    margin: 7.5px;
+    padding: 0;
+}
+.display-users-list>li {
+    width: 25%;
+    font-size: 12px;
+    float: left;
+    padding: 7.5px;
+    color: #333;
+}
+.display-users-list>li>a {
+    display: block;
+    margin-bottom: 10px;
+}
+.display-users-list>li img {
+    border-radius: 3px;
+    max-width: 100%;
+}
+.display-users-list>li .username {
+  font-size: 12px;
+  color: #333;
+  margin-bottom: 0;
+}
+.display-users-list>li .username small {
+    display: block;
+    font-size: 11px;
+    color: #707478;
+    margin-top: 3px;
+}
+.text-ellipsis {
+    white-space: nowrap!important;
+    overflow: hidden!important;
+    text-overflow: ellipsis!important;
+}
+.panel-footer {
+    background: #fff;
+    border-top: 1px solid #eee;
+}
+.text-inverse{
+	color: #2d353c!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

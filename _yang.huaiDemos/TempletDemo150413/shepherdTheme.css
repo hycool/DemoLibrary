@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+*{font-family:"Microsoft YaHei","open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;}
+body{
+	font-family:"Microsoft YaHei","open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:12px;
+	background-color:#d9e0e7;
+	color: rgb(103, 106, 108); 
+	line-height: 1.42857143;
+}
+/*about .panel-*  */
+.panel-inverse {
+    border-color: #bce8f1;
+}
+.panel-inverse>.panel-heading {
+    background-image: -webkit-linear-gradient(top,#242a30 0,#525252 100%);
+    background-image: -o-linear-gradient(top,#242a30 0,#525252 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#242a30),to(#525252));
+    background-image: linear-gradient(to bottom,#242a30 0,#525252 100%);
+	/*
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd9edf7', endColorstr='#ffc4e3f3', GradientType=0);
+	*/
+    background-repeat: repeat-x;
+}
+.panel-inverse>.panel-heading {
+    color: #fff;
+    background-color: #242a30;
+    border-color: #525252;
+}
+/*配合highcharts demo_highcharts_theme_inverse 主题*/
+.panel-inverse>.panel-body.panel-body-inverse{
+	background:#2d353c !important;
+}

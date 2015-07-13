@@ -1,0 +1,175 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin:0 auto;
+}
+.page{
+	width: 640px;
+    height: 1138px;
+	position:relative;
+	overflow:hidden;
+}
+/*p1*/
+.p1{
+	background-image:url(../img_wap/a1bg.jpg);
+	background-repeat:no-repeat;
+	background-position:center top;	
+}
+
+.p1_img1{
+	height: auto;
+    width: 248px;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    margin-left: -124px;
+}
+
+.p1_img2{
+	height: auto;
+    width: 456px;
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    margin-left: -228px;
+}
+
+.p1_img3{
+	height: auto;
+    width: 640px;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+
+/*p2*/
+.p2{
+	background-color: #9261BF;
+    background-image: url(../img_wap/a2bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.p2_img1{
+	height: auto;
+    width: 360px;
+    position: absolute;
+    left: 50%;
+    top: 76%;
+    margin-left: -280px;
+}
+
+/*p3*/
+.p3{
+	background-color: #28374e;
+    background-image: url(../img_wap/a3bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.p3_img1{
+	height: auto;
+    position: absolute;
+    top: 22%;
+}
+
+/*p4*/
+.p4{
+    background-color: #28374e;
+    background-image: url(../img_wap/a4bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+/*p5*/
+.p5{
+	background-color: #28374e;
+    background-image: url(../img_wap/a5bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+/*p6*/
+.p6{
+	background-color: #28374e;
+    background-image: url(../img_wap/a6bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.p6_img{
+	height: auto;
+    width: 380px;
+    position: absolute;
+    left: 50%;
+    top: 27%;
+    margin-left: -140px;
+}
+
+/*p7*/
+.p7{
+	background-color: #28374e;
+    background-image: url(../img_wap/a7bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+/*p8*/
+.p8{
+	background-image: url(../img_wap/a8bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+/*p9*/
+.p9{
+	background-color: #28374e;
+    background-image: url(../img_wap/a9bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.p9_img1{
+	height: auto;
+    width: 334px;
+    position: absolute;
+    left: 50%;
+    top: 58%;
+    margin-left: -160px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

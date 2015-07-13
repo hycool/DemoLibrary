@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap-theme.min.css" />
+<link rel="stylesheet" href="shepherdTheme.css" />
+<title>highmaps</title>
+</head>
+
+<body>
+<div class="container-fluid">
+    <!-- begin row -->
+    <div class="row"> 
+        <!--begin col -->
+        <div class=" col-xs-11">
+            <div class="panel panel-inverse">
+                <div class="panel-heading">
+                    <h4 class="panel-title">中国地图</h4>
+                </div>
+                <div class="panel-body ">
+                    <div id="highmaps-china" style="height:800px;"></div>
+                </div>
+                <div class="panel-footer">Based on HighMaps : china</div>
+            </div>
+        </div>
+        <!-- end col --> 
+        <!--begin col -->
+        <div class=" col-xs-11">
+            <div class="panel panel-inverse">
+                <div class="panel-heading">
+                    <h4 class="panel-title">世界地图</h4>
+                </div>
+                <div class="panel-body ">
+                    <div id="highmaps-world" style="height:800px;"></div>
+                </div>
+                <div class="panel-footer">Based on HighMaps : world</div>
+            </div>
+        </div>
+        <!-- end col --> 
+    </div>
+    <!-- end row --> 
+
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script> 
+<script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> 
+<script src="http://cdn.bootcss.com/highmaps/1.1.5/highmaps.js"></script>
+<!-- 如果需要导出JPEG/PNG/SVG/PDF等格式,需要引入下面的exproting.js--> 
+<script src="http://cdn.bootcss.com/highcharts/4.1.5/modules/exporting.js"></script> 
+<!--可本地定义地图文件，将英文内容替换为中文 -->
+<script src="highmaps-cn-all-sar-taiwan.js"></script>
+<script src="highmaps-world-robinson-highres.js"></script>
+<!--  英文版
+<script src="http://code.highcharts.com/mapdata/countries/cn/custom/cn-all-sar-taiwan.js"></script>
+<script src="http://code.highcharts.com/mapdata/custom/world-robinson-highres.js"></script>
+-->
+<!--
+<script src="highmaps-theme-dark-unica.js"></script>
+-->
+<script src="demo_highmaps_china.js"></script>
+<script src="demo_highmaps_world.js"></script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

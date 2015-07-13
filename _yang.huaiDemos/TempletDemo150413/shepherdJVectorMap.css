@@ -1,0 +1,8 @@
+@charset "utf-8";
+/* CSS Document */
+.jvectormap-tip{
+	background:rgba(0,0,0,0.4);
+	color:#fff;
+	border:0px;
+	font-family:"Microsoft YaHei";
+}

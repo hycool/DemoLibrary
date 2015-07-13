@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+ body{margin: 0 auto;}
+</style>
+</head>
+
+<body>
+<div style="position:relative;margin-top:500px;margin-left:100px;">
+
+<img src="../../TempletDemo150413/user_5.jpg" style="width:100px;height:100px;position:absolute;top:125px;left:125px;border-radius:15px;"/>
+<div id="qrcode" style=""></div>
+</div>
+</body>
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+<script>
+
+$("#qrcode").qrcode({
+	width:350,
+	height:350,
+	render:"canvas",
+	//typeNumber: -1,      //计算模式  
+    background: "#ffffff",//背景颜色  
+    foreground: "#000000", //前景颜色
+	//容错率在0-3之间，数值约大，容错率约高。
+	//correctLevel:3,  
+	text:utf16to8("http://www.kuaiya.cn"),
+	});
+
+
+function utf16to8(str) {  
+    var out, i, len, c;  
+    out = "";  
+    len = str.length;  
+    for(i = 0; i < len; i++) {  
+    c = str.charCodeAt(i);  
+    if ((c >= 0x0001) && (c <= 0x007F)) {  
+        out += str.charAt(i);  
+    } else if (c > 0x07FF) {  
+        out += String.fromCharCode(0xE0 | ((c >> 12) & 0x0F));  
+        out += String.fromCharCode(0x80 | ((c >>  6) & 0x3F));  
+        out += String.fromCharCode(0x80 | ((c >>  0) & 0x3F));  
+    } else {  
+        out += String.fromCharCode(0xC0 | ((c >>  6) & 0x1F));  
+        out += String.fromCharCode(0x80 | ((c >>  0) & 0x3F));  
+    }  
+    }  
+    return out;  
+}  	
+
+</script>
+</html>

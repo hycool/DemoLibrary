@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap-theme.min.css" />
+<link rel="stylesheet" href="http://cdn.bootcss.com/morris.js/0.5.1/morris.css" >
+<link rel="stylesheet" href="shepherdTheme.css" />
+<link rel="stylesheet" href="shepherdMorris.css"/>
+<title>morris</title>
+</head>
+
+<body>
+<div class="container-fluid"> 
+    <!-- begin row -->
+    <div class="row"> 
+        <!--begin col -->
+        <div class="col-md-6 col-xs-12">
+            <div class="panel panel-inverse">
+                <div class="panel-heading">
+                    <h4 class="panel-title">曲线图</h4>
+                </div>
+                <div class="panel-body">
+                    <div id="lineChart" style="height:500px;width:100%;"></div>
+                </div>
+                <div class="panel-footer">Based on Morris : LineChart</div>
+            </div>
+        </div>
+        <!-- end col --> 
+        <!-- begin col -->
+        <div class="col-md-6 col-xs-12">
+            <div class="panel panel-inverse">
+                <div class="panel-heading">
+                    <h4 class="panel-title">区域图</h4>
+                </div>
+                <div class="panel-body">
+                    <div id="areaChart" style="height:500px;width:100%;"></div>
+                </div>
+                <div class="panel-footer">Based on Morris : AreaChart</div>
+            </div>
+        </div>
+        <!-- end col --> 
+    </div>
+    <!-- end row --> 
+    <!-- begin row -->
+    <div class="row"> 
+        <!-- begin col -->
+        <div class="col-md-6 col-xs-12">
+            <div class="panel panel-inverse">
+                <div class="panel-heading">
+                    <h4 class="panel-title">柱状图</h4>
+                </div>
+                <div class="panel-body">
+                    <div id="barChart" style="height:500px;width:100%;"></div>
+                </div>
+                <div class="panel-footer">Based on Morris : BarChart</div>
+            </div>
+        </div>
+        <!-- end col --> 
+        <!-- begin col -->
+        <div class="col-md-6 col-xs-12">
+            <div class="panel panel-inverse">
+                <div class="panel-heading">
+                    <h4 class="panel-title">圆环图</h4>
+                </div>
+                <div class="panel-body">
+                    <div id="donutChart" style="height:500px;width:100%;"></div>
+                </div>
+                <div class="panel-footer">Based on Morris : DonutChart</div>
+            </div>
+        </div>
+        <!-- end col-->
+    </div>
+    <!-- end row --> 
+    
+</div>
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script> 
+<script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> 
+<script src="http://cdn.bootcss.com/raphael/2.1.4/raphael-min.js"></script> 
+<script src="http://cdn.bootcss.com/morris.js/0.5.1/morris.min.js"></script> 
+<script src="demo_morris.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+#containerDiv {
+	width: 220px;
+}
+.fontInfo {
+	color: #2eadd3;
+}
+.fontDanger {
+	color: #c12e2a;
+}
+.fontPrimary{color:#2d6ca2;}
+body {
+	font-family: 'Microsoft YaHei';
+	min-width: 220px;
+	overflow-x: hidden;
+}
+img {
+	margin: 5px;
+	border: 2px solid black;
+	vertical-align: middle;
+	width: 75px;
+	height: 75px;
+}
+#session p {
+	float: right;
+	margin-right: 20px;
+}
+#session span {
+	padding: 10px;
+}
+
+.albumType,.cardStatus{cursor:pointer;}

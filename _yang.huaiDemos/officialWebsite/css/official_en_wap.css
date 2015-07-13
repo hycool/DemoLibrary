@@ -1,0 +1,146 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0;padding:0;}
+body{margin:0 auto}
+.page{
+	margin:0 auto;
+	width: 640px;
+    height: 1138px;
+	position:relative;
+	overflow:hidden;
+}
+
+.download{
+	position:fixed;
+	right:24px;
+	bottom:60%;
+	z-index:99;
+}
+.download img{
+	width:95px;
+	height:84px;
+}
+
+/*p1*/
+.p1{
+	background-image: url(../en_img_wap/index.jpg);
+	background-repeat:no-repeat;
+	background-size:auto 100%;
+	background-position:center top;
+}
+
+/*p2*/
+.p2{
+	background-image: url(../en_img_wap/index-02.jpg);
+	background-repeat:no-repeat;
+	background-size:auto 100%;
+	background-position:center top;
+}
+
+/*p3*/
+.p3{
+	background-image: url(../en_img_wap/index-03.jpg);;
+	background-repeat:no-repeat;
+	background-size:auto 100%;
+	background-position:center top;
+}
+
+/*p4*/
+.p4{
+	background-image: url(../en_img_wap/index-04.jpg);;
+	background-repeat:no-repeat;
+	background-size:auto 100%;
+	background-position:center top;
+}
+
+/*p5*/
+.p5{
+	background-image: url(../en_img_wap/index-05.jpg);;
+	background-repeat:no-repeat;
+	background-size:auto 100%;
+	background-position:center top;
+}
+
+/*p6*/
+.p6{
+	background-image: url(../en_img_wap/index-06.jpg);;
+	background-repeat:no-repeat;
+	background-size:auto 100%;
+	background-position:center top;
+}
+
+/*p7*/
+.p7{
+	background-image: url(../en_img_wap/index-07.jpg);;
+	background-repeat:no-repeat;
+	background-size:auto 100%;
+	background-position:center top;
+}
+
+/*p8*/
+.p8{
+	background-image: url(../en_img_wap/index-08.jpg);
+	background-repeat:no-repeat;
+	background-size:auto 100%;
+	background-position:center top;
+}
+
+.googleplay{
+	position:absolute;
+	left:198px;
+	bottom:160px;
+}
+
+.googleplay img{
+	width:61px;
+	height:61px;
+}
+
+.facebook{
+	position:absolute;
+	left:293px;
+	bottom:160px;
+}
+
+.facebook img{
+	width:61px;
+	height:61px;
+}
+
+.sina{
+	position:absolute;
+	left:388px;
+	bottom:160px;
+}
+
+.sina img{
+	width:61px;
+	height:61px;
+}
+
+.down_btn{
+	width:640px;
+	position:absolute;
+	left:0;
+	text-align:center;
+	top:990px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

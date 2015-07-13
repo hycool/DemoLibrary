@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>Nana Mate</title>
+<!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
+     -->
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="bootstrap-theme.min.css" />
+<link rel="stylesheet" type="text/css" href="nanamate.css"/>
+<script src="jquery-2.1.1.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script src="angular.min.js"></script>
+<script src="content.js"></script>
+<script src="popup.js"></script>
+<script src="modules/session.js"></script>
+<script src="modules/feed.js"></script>
+<script src="modules/utils.js"></script>
+<script src="app.js"></script>
+</head>
+<body>
+<div class=" container-fluid">
+  <div id="containerDiv" class=" form-group form-group-sm"> 
+    <!-- **************************************************************************************** --> 
+    <!-- 登陆表单验证组 -->
+    <section id="login">
+      <h4 class="fontPrimary">请先登录</h4>
+      <p>
+        <input type="text" id="zid" value="" placeholder="用 户 名" class="form-control">
+      </p>
+      <p>
+        <input type="password" id="password" value="" placeholder="密    码" class="form-control">
+      </p>
+      <p>
+        <button id="btnLogin" class="btn btn-primary  btn-sm btn-block" type="button">登 录</button>
+      </p>
+    </section>
+    
+    <!-- **************************************************************************************** --> 
+    <!-- postcard 表单验证组 -->
+    <section id="post">
+      <h5 class="fontInfo"><strong>资源推送</strong></h5>
+      <p class="info small fontPrimary"></p><!-- show view infomation-->
+      <p>
+      <div class="input-group">
+        <div class="input-group-btn">
+          <button class="btn btn-info btn-sm dropdown-toggle" data-toggle="dropdown">专辑类型<span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li class="albumType" data-mark="publish"><a>已发布快拿专辑</a></li>
+            <li class="albumType" data-mark="ax"><a>已发布爱笑专辑</a></li>
+            <li class="albumType" data-mark="pend"><a>未发布专辑</a></li>
+          </ul>
+        </div>
+        <input type="text" class="form-control" placeholder="请选择专辑类型" data-mark="albumType" disabled/>
+      </div>
+      <!-- end of input-group -->
+      </p>
+      <select id="albumlist" class="form-control" disabled>
+        <option data-mark="" selected disabled>  -- 请从列表中指定目标专辑 --   </option>
+      </select>
+      <p>
+      <div class="input-group">
+        <div class="input-group-btn">
+          <button type="button" class="btn btn-info btn-sm dropdown-toggle btn-block" data-toggle="dropdown">卡片状态<span class="caret"></span> </button>
+          <ul class="dropdown-menu">
+            <li class="cardStatus" data-st="1"><a>发布</a></li>
+            <li class="cardStatus" data-st="0"><a>待审</a></li>
+          </ul>
+        </div>
+        <input type="text" class="form-control" placeholder="请选择卡片状态" data-mark="cardStatus" disabled/>
+      </div>
+      <!-- end of input-group -->
+      </p>
+      <p>
+        <p id="alertMsg"></p>
+        <button id="btnPost" class="btn btn-info btn-sm btn-block" type="button">提 交</button>
+      </p>
+    </section>
+    
+    <!-- **************************************************************************************** --> 
+    <!--  退出登陆表单验证组-->
+    <section id="session">
+      <p> <strong><span class="small fontPrimary "></span></strong>
+        <button id="btnLogout" class="btn btn-danger  btn-sm " type="button">退出登陆</button>
+      </p>
+    </section>
+  </div>
+  <!-- end of form-group-sm --> 
+</div>
+<!-- end of container-fluid -->
+
+<!-- modal info-->
+<div class="modal fade" id="Modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">
+          <span aria-hidden="true">&times;</span>
+          <span class="sr-only">Close</span>
+        </button>
+        <h4 class="modal-title">操作信息</h4>
+      </div><!-- /modal-header -->
+       
+      <div class="modal-body">
+         <p id="modalBody">
+        </p>
+      </div><!-- /modal-body -->
+        <button id="btnModal" type="button" class="btn btn-info btn-block">OK</button>
+      <div class="modal-footer">
+        
+      </div><!-- /modal-footer -->
+    </div><!-- /modal-content -->
+  </div><!-- /modal-dailog -->
+</div><!-- /#Modal -->
+
+
+</body>
+</html>
